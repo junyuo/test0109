@@ -5,7 +5,6 @@
  //產生回傳給line server的格式
  $sender_userid = $json_obj->events[0]->source->userId;
  $sender_txt = $json_obj->events[0]->message->text;
- $sender_replyToken = $json_obj->events[0]->replyToken;
  $response = array (
 				"reply" => $sender_replyToken,
 				"messages" => array (
